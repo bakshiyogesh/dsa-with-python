@@ -1,13 +1,12 @@
 class Node:
-    def __init__(self, data=None, next=None, prev=None):
+    def __init__(self, data=None):
         self.data = data
-        self.next = next
-        self.prev = prev
+        self.next = None
+        self.prev = None
 
 class DoubleLinkedList:
-    def __init__(self, head=None, next=None):
-        self.head = head
-        self.next = next
+    def __init__(self):
+        self.head = None
      
     def insert_at_beginning(self, data):
         new_node = Node(data)

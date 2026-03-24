@@ -1,11 +1,11 @@
 class Node:
-    def __init__(self, data=None,next=None):
-        self.data = data
-        self.next = next
+    def __init__(self,value=None):
+        self.data = value
+        self.next = None
 
 class SingleLinkedList:
-    def __init__(self,head=None):
-        self.head = head
+    def __init__(self):
+        self.head = None
     
     def insert_at_beginning(self, data):
         new_node = Node(data)
